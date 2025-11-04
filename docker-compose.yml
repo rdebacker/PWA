@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  mypwa:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: mypwa
+    ports:
+      - "8080:80"
+    restart: unless-stopped
